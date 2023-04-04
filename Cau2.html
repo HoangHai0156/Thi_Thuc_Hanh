@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau 2</title>
+</head>
+
+<body>
+    <script>
+        function findX(number, array) {
+            for (var i = 0; i < array.length; i++) {
+                if(number == array[i]){
+                    console.log(i);
+                }
+            }
+        }
+        function isInArray(number, array){
+            let isIn = false;
+            for (var i = 0; i < array.length; i++) {
+                if(number == array[i]){
+                    isIn = true;
+                }
+            }
+            console.log(isIn);
+        }
+        let arr = [1,5,6,8,10,9,7];
+        findX(5,arr);
+        isInArray(5,arr);
+    </script>
+</body>
+
+</html>
